@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Virtual Lab</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/website_logo1.png">
+</head>
+<!DOCTYPE html>
+<h1 style="text-align: center" >Lock Variable</h1>
+    <body><h>
+
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="diskscheduling_index.html">
+                    <img id="logo" src="images/website_logo1.png" alt="logo">
+                    <div class="hover-border">Disk Scheduling</div>
+                </a>
+                <div class="divider"></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active waves-effect waves-light" aria-current="page" href="index.html">
+                                <div class="hover-border">Home</div>
+                            </a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Algorithms
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item waves-effect waves-light" href="pagereplacement_index.html">Page Replacement</a></li>
+                                <li><a class="dropdown-item waves-effect waves-light" href="diskscheduling_index.html">Disk Scheduling</a></li>
+                                <li><a class="dropdown-item waves-effect waves-light" href="#">CPU Scheduling</a></li>
+                                <li><a class="dropdown-item waves-effect waves-light" href="concurrencyanddeadlock_index.html">Concurrency</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="compare.html"><span class="hover-border">Compare</span></a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="about.html"><span class="hover-border">About Developers</span></a>
+                        </li>
+    
+                    </ul>
+    
+                    <div class="d-flex">
+                        <div class="dropdown">
+                            <input id="search-input" class="form-control me-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" placeholder="Type to search...">
+                            <ul id="suggestions" class="dropdown-menu dropdown-menu-dark" aria-labelledby="search-button">
+                            </ul>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="position: absolute; right: 15px;">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="block">
+            <div class="overlay"></div>
+            <div class="heading">
+                <h1 class="animate__animated animate__slideInUp" data-aos="fade-in" style="text-align: center;">Lock Variable
+                </h1>
+            </div>
+            <div class="arrow-box">
+                <img src="images/down_arrow.png" alt="Downward Arrow">
+            </div>
+        </div>
+    
+        <div class="mid-block" style="min-height: fit-content;">
+            <div class="mid-heading-wrapper">
+                <div class="mid-heading">
+                    <h1 class="hover-border">About</h1>
+                </div>
+            </div>
+            <div class="mid block">
+    
+            </div>
+        </div>
+    
+        <!-- <header>
+            <div class="navbar p-0">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light" href="homepage.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light" href="binary%20semaphore.html">Binary Semaphore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light" href="counting%20semaphore.html">Counting Semaphore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light" href="banker's%20algo.html">Banker's Algorithm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light" href="turn_variable.html">Turn variable</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-effect waves-light" href="TSL.html">TSL</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        
+        </header> -->
+        <h1>Lock Variable</h1>
+        <p>A lock variable provides the simplest synchronization mechanism for processes. Some noteworthy points regarding Lock Variables are-
+        
+            Its a software mechanism implemented in user mode, i.e. no support required from the Operating System.
+            Its a busy waiting solution (keeps the CPU busy even when its technically waiting).
+            It can be used for more than two processes.
+        </p>
+        
+        
+        
+        <div id="user_inp">
+            <input type="text" name="process" id="p_no" placeholder="Number of processes" style="
+            background-color: chartreuse;
+        ">
+            <button class="btn btn-primary btn-sm waves-effect waves-light" id="begin" style="
+            background-color: coral;
+        ">Start</button>
+        </div>
+        
+        <div class="container-fluid p-4">
+            <div class="row">
+                <div class="col-xs-4 col-4" id="processes">
+                </div>
+                <div class="col-xs-6 col-6">
+        
+                    <div class="ent-section" style="
+            background-color: aqua;
+        ">
+                        <div class="p-4">
+                            Entry Section
+                            <div class="ent-items p-3">
+                                <div id="lockcheck">
+                                    Test Lock
+                                </div>
+                                <div class="btn btn-primary btn-sm px-1 waves-effect waves-light" id="TestLock" style="display: none;"></div>
+                            </div>
+                            <div class="ent-items p-3">
+                                <div id="lockset">
+                                    Set Lock
+                                </div>
+                                <div class="btn btn-primary btn-sm px-1 waves-effect waves-light" id="SetLock" style="display: none;"></div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="cs-section">
+                        <div class="p-4" style="
+            background-color: brown;
+        ">
+                            <div>Crititcal section</div>
+                            <div class="btn btn-primary btn-sm px-1 waves-effect waves-light" id="showCritical" style="display: none;"></div>
+                        </div>
+                    </div>
+        
+                    <div class="ext-section">
+                        <div class="p-4" style="
+            background-color: darkgoldenrod;
+        ">
+                            <div>Exit Section</div>
+        
+                            <div class="btn btn-primary btn-sm px-1 waves-effect waves-light" id="showExit" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-4 pt-4">
+            <div class="row">
+                <div class="col-5">
+        
+                </div>
+                <div class="col-3">
+                    <div class="lockvariable">
+                        <div class="text-center">
+                            Lock Variable
+        
+                            <h6>Lock Value = <span id="svalue"></span></h6>
+        
+                            <div style="background-color: aquamarine;border-bottom: 1px solid;padding: 5px;"></div>
+        
+                            <div>
+                                <p>Process in Waiting Queue</p>
+                                <div class="btn btn-primary btn-sm px-1 waves-effect waves-light" id="waiting-process" style="display: none;">
+        
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        
+        <script>
+            // $('#TestLock #SetLock #showCritical #showExit').css('display', 'none');
+            $(document).ready(function() {
+                // $('#TestLock #SetLock #showCritical #showExit').css('display', 'none');
+                $("#TestLock, #SetLock, #showCritical, #showExit, #waiting-process").css("display", "none");
+                $("#begin").click(function() {
+                    let testlock = [];
+                    let critical = [];
+                    let exit = [];
+                    let queue = [];
+                    let setlock = [];
+                    let lock = 0;
+                    let process = '';
+                    let p_no = $("#p_no").val();
+                    for (let i = 0; i < p_no; i++) {
+                        process += '<button class="btn btn-primary btn-sm" id="process' + i + '">Process ' + i + '</button><br>'
+                    }
+                    $("#processes").html(process);
+                    $('#waiting-process').text(queue);
+                    $('#svalue').text(lock);
+                    for (let i = 0; i < p_no; i++) {
+                        $('#process' + i).click(function(e) {
+                            e.preventDefault();
+                            runProcess('Process ' + i);
+                        });
+                    }
+        
+                    function runProcess(msg) {
+                        let no = parseInt(msg[8]);
+                        $('#process' + no).hide();
+                        $('#svalue').text(lock);
+                        $('#lockcheck').text('Testing...');
+                        testlock.push(msg);
+                        $('#TestLock').css('display', 'block');
+                        $('#TestLock').text(testlock);
+                        $('#svalue').text(lock);
+                        //$('#blocked-process').text(queue);
+        
+                        if (lock == 0) {
+                            setTimeout(() => {
+                                $('#lockcheck').text('Test Lock');
+                                $('#lockset').text('Setting...');
+                                lock = 1;
+                                $('#svalue').text(lock);
+                                testlock = $.grep(testlock, function(value) {
+                                    return value != msg;
+                                });
+                                if (testlock.length == 0) {
+                                    $('#TestLock').css('display', 'none');
+                                }
+                                $('#TestLock').text(testlock);
+                                setlock.push(msg);
+                                $('#SetLock').text(setlock);
+                                $('#SetLock').css('display', 'block');
+                                setTimeout(() => {
+                                    $('#lockset').text('Set Lock');
+                                    setlock = $.grep(setlock, function(value) {
+                                        return value != msg;
+                                    });
+                                    if (setlock.length == 0) {
+                                        $('#SetLock').css('display', 'none');
+                                    }
+        
+                                    $('#SetLock').text(setlock);
+                                    critical.push(msg);
+                                    $('#showCritical').css('display', 'block');
+                                    $('#showCritical').text(critical);
+                                    setTimeout(() => {
+                                        critical = $.grep(critical, function(value) {
+                                            return value != msg;
+                                        });
+                                        if (critical.length == 0) {
+                                            $('#showCritical').css('display', 'none');
+                                        }
+                                        $('#showCritical').text(critical);
+                                        exit.push(msg);
+                                        $('#showExit').css('display', 'block');
+                                        $('#showExit').text(exit);
+                                        setTimeout(() => {
+                                            exit = $.grep(exit, function(value) {
+                                                return value != msg;
+                                            });
+                                            if (exit.length == 0) {
+                                                $('#showExit').css('display', 'none');
+                                            }
+                                            $('#showExit').text(exit);
+                                            lock = 0;
+                                            $('#svalue').text(lock);
+                                            if (queue.length != 0) {
+                                                let new_process = queue.shift()
+                                                $('#waiting-process').text(queue);
+                                                runProcess(new_process);
+                                            } else {
+                                                $('#waiting-process').css('display', 'none');
+                                            }
+                                        }, 3000);
+                                    }, 3000);
+                                }, 1500);
+                            }, 1500);
+                        } else {
+                            setTimeout(() => {
+                                $('#lockcheck').text('Test Lock');
+                                testlock = $.grep(testlock, function(value) {
+                                    return value != msg;
+                                });
+                                if (testlock.length == 0) {
+                                    $('#TestLock').css('display', 'none');
+                                }
+                                $('#TestLock').text(testlock);
+                                queue.push(msg);
+                                $('#waiting-process').text(queue);
+                            }, 1500);
+                        }
+                    }
+                });
+            });
+        </script>
+        
+        
+        
+        <div class="hiddendiv common"></div>
+        
+    </h></body>
+    </div>
+    </html>
